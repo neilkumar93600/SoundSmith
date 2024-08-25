@@ -160,7 +160,7 @@ To deploy SoundSmith to GitHub Pages, follow these steps:
    npm run deploy
    ```
 
-   The application will be available at `[https://neilkumar93600.github.io/soundsmith/](https://neilkumar93600.github.io/SoundSmith/)`.
+   The application will be available at `https://neilkumar93600.github.io/SoundSmith/`.
 
 ## Contributing
 
