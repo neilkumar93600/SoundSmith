@@ -73,19 +73,19 @@ soundsmith/
 
 ### Main Interface
 
-![Main Interface](./mnt/data/chatbox.png)
+![Main Interface](./chatbox.png)
 
 The main interface of SoundSmith, where users interact with the AI for music generation. The user message area is on the right, and AI responses appear on the left.
 
 ### Sidebar
 
-![Sidebar](./mnt/data/sidebar.png)
+![Sidebar](./sidebar.png)
 
 The sidebar on the left shows previous music sessions, allowing users to quickly access their past interactions.
 
 ### Full Layout
 
-![Full Layout](./mnt/data/main.png)
+![Full Layout](./main.png)
 
 A full view of the SoundSmith interface, showcasing both the sidebar and the main chat area.
 
