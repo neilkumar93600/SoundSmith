@@ -1,0 +1,210 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray-50: #f9f9f9;
+  --gray-100: #ececec;
+  --gray-200: #e3e3e3;
+  --gray-300: #cdcdcd;
+  --gray-400: #b4b4b4;
+  --gray-500: #9b9b9b;
+  --gray-600: #676767;
+  --gray-700: #424242;
+  --gray-750: #2f2f2f;
+  --gray-800: #212121;
+  --gray-900: #171717;
+  --gray-950: #0d0d0d;
+  --red-500: #ef4444;
+  --red-700: #b91c1c;
+  --brand-purple: #ab68ff;
+  --background-main: #1e1e1e;
+  --background-sidebar: #333;
+  --background-chat: #2c2c2c;
+  --background-header: #444;
+  --background-input: #222;
+  --background-button: #4CAF50;
+  --background-button-hover: #45a049;
+  --text-color-main: #e0e0e0;
+  --text-color-inverted: var(--white);
+  --border-color: #444;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-main);
+  color: var(--text-color-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  aspect-ratio: 16 / 9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 250px;
+  background-color: var(--background-sidebar);
+  color: var(--text-color-inverted);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.slider {
+  flex: 1;
+  margin-top: 20px;
+  overflow-y: auto;
+}
+
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-chat);
+  border-left: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.header {
+  padding: 10px;
+  background-color: var(--background-header);
+  text-align: right;
+  position: relative;
+}
+
+.header img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.chat-section {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+.chat-message.user {
+  align-self: flex-end;
+  background-color: var(--gray-750);
+}
+
+.chat-message.ai {
+  align-self: flex-start;
+  background-color: var(--gray-900);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--background-sidebar);
+  border-top: 1px solid var(--border-color);
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: var(--background-input);
+  color: var(--text-color-main);
+}
+
+.input-container button {
+  background: none; /* Transparent background */
+  border: none;
+  cursor: pointer;
+  padding: 0; /* Remove padding */
+}
+
+.input-container button img {
+  width: 24px; /* Adjust size as needed */
+  height: 24px;
+}
+
+.input-container button:hover img {
+  filter: brightness(80%); /* Optional: darken image on hover */
+}
+
+/* Additional styling for file upload and chat interface */
+.file-upload-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--background-button);
+  color: var(--text-color-inverted);
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.file-upload-button svg {
+  width: 24px;
+  height: 24px;
+}
+
+.hidden-input {
+  display: none;
+}
+
+.chat-textarea {
+  resize: none;
+  border: none;
+  background-color: var(--background-input);
+  color: var(--text-color-main);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-height: 52px;
+}
+
+.disabled-button {
+  background-color: #d7d7d7;
+  color: #f4f4f4;
+  cursor: not-allowed;
+}
+
+.disabled-button:hover {
+  opacity: 1;
+}
+
+.chat-message button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--brand-purple);
+  margin-left: 10px;
+}

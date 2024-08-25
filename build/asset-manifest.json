@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SoundSmith/static/css/main.b7cb401f.css",
+    "main.js": "/SoundSmith/static/js/main.78ff59b3.js",
+    "static/media/user.png": "/SoundSmith/static/media/user.7b4e3c2baaf9f020667f.png",
+    "static/media/send.png": "/SoundSmith/static/media/send.ff420c5a2f1fb67c1954.png",
+    "index.html": "/SoundSmith/index.html",
+    "main.b7cb401f.css.map": "/SoundSmith/static/css/main.b7cb401f.css.map",
+    "main.78ff59b3.js.map": "/SoundSmith/static/js/main.78ff59b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7cb401f.css",
+    "static/js/main.78ff59b3.js"
+  ]
+}
