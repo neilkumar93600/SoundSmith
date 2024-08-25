@@ -106,7 +106,7 @@ Ensure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/soundsmith.git
+   git clone https://github.com/neilkumar93600/soundsmith.git
    cd soundsmith
    ```
 
@@ -160,7 +160,7 @@ To deploy SoundSmith to GitHub Pages, follow these steps:
    npm run deploy
    ```
 
-   The application will be available at `https://your-username.github.io/soundsmith/`.
+   The application will be available at `[https://neilkumar93600.github.io/soundsmith/](https://neilkumar93600.github.io/SoundSmith/)`.
 
 ## Contributing
 
